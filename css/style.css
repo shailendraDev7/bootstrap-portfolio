@@ -170,6 +170,11 @@ button, a{
 }
 
 /* Carousel */
+
+.carousel{
+    padding: 0 8rem;
+}
+
 .carousel .card{
     background-color: #262631;
     color: var(--bs-main-color);
