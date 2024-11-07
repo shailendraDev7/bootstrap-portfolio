@@ -15,7 +15,11 @@
     --bs-supporting-color: #C850C0;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Lexend Deca', sans-serif;
     color: var(--bs-dark-color);
 }
@@ -30,68 +34,75 @@ h2 {
     font-size: 3.4rem;
 }
 
-p{
+p {
     margin: 0;
     font-weight: 400;
     font-size: 1rem;
     color: var(--bs-dark-color);
     letter-spacing: 0.07rem;
     line-height: 1.55rem;
-    font-synthesis: none; /*Disables the synthesis of the bold, italic, small-caps, and/or subscript and superscript typefaces*/
+    font-synthesis: none;
+    /*Disables the synthesis of the bold, italic, small-caps, and/or subscript and superscript typefaces*/
     text-rendering: optimizeLegibility;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-li{
+li {
     list-style: none;
 }
 
-button, a{
+button,
+a {
     font-size: 1.15rem;
     letter-spacing: 0.03rem;
     word-spacing: .1rem;
 }
 
-.common-heading{
+.common-heading {
     font-size: 2.8rem;
     font-weight: 500;
-    letter-spacing: 0.01rem!important;
+    letter-spacing: 0.01rem !important;
 }
 
-.common-title{
+.common-title {
     margin-bottom: 4.2rem;
 }
 
 /* Navbar style */
-.nav-link{
+.nav-link {
     color: var(--bs-main-color);
     font-weight: bold;
 }
 
-.text-light-grey{
+.text-light-grey {
     color: var(--bs-primary-color);
 }
 
-.common-section{
+.common-section {
     padding: 0 0 9rem 0;
 }
 
-/* Hero section start */
-.hero-section{
-    display: grid;
-    place-content: center;
-    height: inherit;    
+.bg-theme {
+    color: var(--bs-supporting-color);
+    font-weight: bold;
+    background-image: none !important;
 }
 
-.bg-main{
-    height: 100vh;
+/* Hero section start */
+.hero-section {
+    display: grid;
+    place-content: center;
+    height: inherit;
+}
+
+.bg-main {
     position: relative;
 }
 
-.hero-video--section{
+.hero-video--section {
     width: 30rem;
     border-radius: 2rem;
     -webkit-border-radius: 2rem;
@@ -116,18 +127,18 @@ button, a{
     width: calc(100% + 1.3px);
     height: 150px;
     transform: rotateY(180deg);
-    
+
 }
 
 .custom-shape-divider-bottom-1730796877 .shape-fill {
     fill: #FFFFFF;
-    
+
 }
 
 /***** Services Section *****/
 
-.services-section{
-    padding: 6rem 0 3rem 0!important;
+.services-section {
+    padding: 6rem 0 3rem 0 !important;
 }
 
 .icon-span {
@@ -137,45 +148,45 @@ button, a{
     color: var(--bs-main-color);
 }
 
-.card-box:hover{
+.card-box:hover {
     box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
 }
 
 /***** End Services Section *****/
 
-/***** More Info Section *****/ 
-.more-info-section{
-    background-image: linear-gradient(rgba(22,22,22,0.7), rgba(22,22,22,0.9)), url("https://images.pexels.com/photos/15705988/pexels-photo-15705988/free-photo-of-a-wooden-walkway-in-the-woods-with-trees.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+/***** More Info Section *****/
+.more-info-section {
+    background-image: linear-gradient(rgba(22, 22, 22, 0.7), rgba(22, 22, 22, 0.9)), url("https://images.pexels.com/photos/15705988/pexels-photo-15705988/free-photo-of-a-wooden-walkway-in-the-woods-with-trees.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding: 6rem 0;
     /* overflow: hidden; */
-}   
+}
 
-.more-info-section .img-section{
+.more-info-section .img-section {
     position: relative;
 }
 
-.more-info-section .img-section img{
+.more-info-section .img-section img {
     width: 70%;
 }
 
 /***** End More Info Section *****/
 
-/***** Testimonial Section *****/ 
-.business-section{
+/***** Testimonial Section *****/
+.business-section {
     padding-top: 3rem;
 }
 
 /* Carousel */
 
-.carousel{
+.carousel {
     padding: 0 8rem;
 }
 
-.carousel .card{
+.carousel .card {
     background-color: #262631;
     color: var(--bs-main-color);
     transition: all 0.3s linear;
@@ -185,23 +196,116 @@ button, a{
     -o-transition: all 0.3s linear;
 }
 
-.carousel-inner .card p{
+.carousel-inner .card p {
     color: var(--bs-main-color);
 }
 
-.carousel-inner .card:hover{
-    background-color:var(--bs-main-color);
-    color:var(--bs-dark-color);
-}
-
-.carousel-inner .card:hover p{
+.carousel-inner .card:hover {
+    background-color: var(--bs-main-color);
     color: var(--bs-dark-color);
 }
 
-.fa-star{
+.carousel-inner .card:hover p {
+    color: var(--bs-dark-color);
+}
+
+.fa-star {
     color: var(--bs-supporting-color);
 }
+
 /***** End Testimonial Section *****/
 
+/***** Expert Panel Section *****/
+.text-grey {
+    color: var(--bs-primary-color);
+}
+
+.text-light-grey {
+    color: var(--bs-primary-color);
+}
+
+/***** End Expert Panel Section *****/
+
+/***** Contact Section *****/
+.contact-section {
+    position: relative;
+}
+
+.contact-section .common-title {
+    padding-top: 6rem;
+}
+
+.custom-shape-divider-top-1730944167 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1730944167 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1730944167 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.form-section {}
+
+/***** End Contact Section *****/
+
+.main-footer-section {
+    padding: 0 0 4 0;
+    color: var(--bs-main-color);
+}
+
+.contact-div {
+    background-color: #222;
+}
+
+.icon-div {
+    width: 5rem;
+    height: 5rem;
+}
 
 
+/* MEDIA QUERIES */
+@media screen and (max-width: 1200px) {
+    .hero-video--section {
+        width: 20rem;
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+    }
+}
+
+
+@media screen and (max-width:998px) {
+    .navbar-toggler {
+        border-color: var(--bs-main-color);
+    }
+
+    .navbar-toggler-icon {
+        color: var(--bs-main-color);
+        background-color: var(--bs-main-color);
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    section .common-heading {
+        font-size: 2rem;
+    }
+
+    section .para-width {
+        width: auto;
+    }
+}
