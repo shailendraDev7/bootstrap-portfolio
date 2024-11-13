@@ -255,7 +255,7 @@ a {
     fill: #FFFFFF;
 }
 
-.form-section {}
+/* .form-section {} */
 
 /***** End Contact Section *****/
 
@@ -272,6 +272,13 @@ a {
     width: 5rem;
     height: 5rem;
 }
+
+/***** Footer Section *****/ 
+
+
+
+/***** End Footer Section *****/
+
 
 
 /* MEDIA QUERIES */
@@ -309,3 +316,4 @@ a {
         width: auto;
     }
 }
+
