@@ -213,11 +213,21 @@ a {
     color: var(--bs-supporting-color);
 }
 
+.carousel-indicators{
+    bottom: -20%;
+}
+
+.carousel-indicators [data-bs-target]{
+    width: .7rem;
+    height: .7rem;
+    background-color: var(--bs-secondary-color);
+}
+
 /***** End Testimonial Section *****/
 
 /***** Expert Panel Section *****/
 .text-grey {
-    color: var(--bs-primary-color);
+    color: var(--bs-dark-color);
 }
 
 .text-light-grey {
@@ -314,6 +324,19 @@ a {
 
     section .para-width {
         width: auto;
+    }
+
+    .hero-section{
+        height: 100vh;
+    }
+
+    h2{
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+
+    .more-info-section{
+        text-align: center;
     }
 }
 
