@@ -1,3 +1,5 @@
+@import url(media-queries.css);
+
 * {
     margin: 0;
     padding: 0;
@@ -13,13 +15,16 @@
     --bs-primary-color: #c6c6c6;
     --bs-secondary-color: #29a9fd;
     --bs-supporting-color: #C850C0;
+    /* --bs-header-height: 100px; */
 }
+
 
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+a {
     font-family: 'Lexend Deca', sans-serif;
     color: var(--bs-dark-color);
 }
@@ -54,8 +59,8 @@ li {
     list-style: none;
 }
 
-button,
-a {
+
+button {
     font-size: 1.15rem;
     letter-spacing: 0.03rem;
     word-spacing: .1rem;
@@ -72,9 +77,26 @@ a {
 }
 
 /* Navbar style */
+/* .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: var(--bs-header-height);
+    z-index: 1000; 
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+} */
+
+
+.navbar-toggler {}
+
 .nav-link {
-    color: var(--bs-main-color);
+    color: var(--bs-dark-color);
     font-weight: bold;
+    margin: 0 20px;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--bs-secondary-color);
 }
 
 .text-light-grey {
@@ -82,7 +104,7 @@ a {
 }
 
 .common-section {
-    padding: 0 0 9rem 0;
+    padding: 0 0 5rem 0;
 }
 
 .bg-theme {
@@ -112,9 +134,6 @@ a {
 }
 
 .custom-shape-divider-bottom-1730796877 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
@@ -122,17 +141,14 @@ a {
 }
 
 .custom-shape-divider-bottom-1730796877 svg {
-    position: relative;
     display: block;
     width: calc(100% + 1.3px);
     height: 150px;
     transform: rotateY(180deg);
-
 }
 
 .custom-shape-divider-bottom-1730796877 .shape-fill {
     fill: #FFFFFF;
-
 }
 
 /***** Services Section *****/
@@ -150,6 +166,10 @@ a {
 
 .card-box:hover {
     box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+}
+
+.img-fluid {
+    width: 150px;
 }
 
 /***** End Services Section *****/
@@ -171,6 +191,10 @@ a {
 
 .more-info-section .img-section img {
     width: 70%;
+}
+
+.more-info-section .img-section {
+    width: 500px;
 }
 
 /***** End More Info Section *****/
@@ -213,11 +237,11 @@ a {
     color: var(--bs-supporting-color);
 }
 
-.carousel-indicators{
+.carousel-indicators {
     bottom: -20%;
 }
 
-.carousel-indicators [data-bs-target]{
+.carousel-indicators [data-bs-target] {
     width: .7rem;
     height: .7rem;
     background-color: var(--bs-secondary-color);
@@ -269,13 +293,36 @@ a {
 
 /***** End Contact Section *****/
 
+
+/***** Footer Section *****/
+
+
 .main-footer-section {
     padding: 0 0 4 0;
     color: var(--bs-main-color);
 }
 
 .contact-div {
-    background-color: #222;
+    background-color: var(--bs-main-color);
+    flex: 1;
+    margin: 20px;
+    cursor: pointer;
+    
+}
+
+.contact-div:hover{
+    width: auto;
+    box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
 }
 
 .icon-div {
@@ -283,60 +330,25 @@ a {
     height: 5rem;
 }
 
-/***** Footer Section *****/ 
+.footer-navmenu {
+    margin-top: 1rem;
+}
 
+.row ul li a {    
+    color: var(--bs-primary-color);
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    line-height: 2rem;    
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
 
+.row ul li a:hover {
+    font-weight: bold;
+    color: var(--bs-secondary-color);
+}
 
 /***** End Footer Section *****/
-
-
-
-/* MEDIA QUERIES */
-@media screen and (max-width: 1200px) {
-    .hero-video--section {
-        width: 20rem;
-        border-radius: 1rem;
-        -webkit-border-radius: 1rem;
-        -moz-border-radius: 1rem;
-        -ms-border-radius: 1rem;
-        -o-border-radius: 1rem;
-    }
-}
-
-
-@media screen and (max-width:998px) {
-    .navbar-toggler {
-        border-color: var(--bs-main-color);
-    }
-
-    .navbar-toggler-icon {
-        color: var(--bs-main-color);
-        background-color: var(--bs-main-color);
-    }
-
-    h1 {
-        font-size: 2.4rem;
-    }
-
-    section .common-heading {
-        font-size: 2rem;
-    }
-
-    section .para-width {
-        width: auto;
-    }
-
-    .hero-section{
-        height: 100vh;
-    }
-
-    h2{
-        font-size: 1.8rem;
-        line-height: 2.4rem;
-    }
-
-    .more-info-section{
-        text-align: center;
-    }
-}
-
