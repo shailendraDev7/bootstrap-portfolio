@@ -9,11 +9,11 @@
 
 /* Declare Global CSS Variables */
 :root {
-    --bs-dark-color: #1a1d20;
-    --bs-dark-primary: #1c1c1c;
+    --bs-dark-primary: #2a2e32;
+    --bs-dark-color: #33383d;
     --bs-main-color: #fff;
     --bs-primary-color: #c6c6c6;
-    --bs-secondary-color: #29a9fd;
+    --bs-secondary-color: #77abff;
     --bs-supporting-color: #C850C0;
     /* --bs-header-height: 100px; */
 }
@@ -43,7 +43,7 @@ p {
     margin: 0;
     font-weight: 400;
     font-size: 1rem;
-    color: var(--bs-dark-color);
+    /* color: var; */
     letter-spacing: 0.07rem;
     line-height: 1.55rem;
     font-synthesis: none;
@@ -76,21 +76,13 @@ button {
     margin-bottom: 4.2rem;
 }
 
-/* Navbar style */
-/* .navbar {
-    position: fixed;
-    top: 0;
+.custom-shape1 {
+    position: absolute;
     width: 100%;
-    height: var(--bs-header-height);
-    z-index: 1000; 
-    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
-} */
-
-
-.navbar-toggler {}
+}
 
 .nav-link {
-    color: var(--bs-dark-color);
+    color: var(--bs-dark-primary);
     font-weight: bold;
     margin: 0 20px;
 }
@@ -101,10 +93,6 @@ button {
 
 .text-light-grey {
     color: var(--bs-primary-color);
-}
-
-.common-section {
-    padding: 0 0 5rem 0;
 }
 
 .bg-theme {
@@ -120,10 +108,6 @@ button {
     height: inherit;
 }
 
-.bg-main {
-    position: relative;
-}
-
 .hero-video--section {
     width: 30rem;
     border-radius: 2rem;
@@ -133,30 +117,16 @@ button {
     -o-border-radius: 2rem;
 }
 
-.custom-shape-divider-bottom-1730796877 {
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1730796877 svg {
+.custom-shape2 svg {
+    /* position: relative; */
+    top: 0;
     display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1730796877 .shape-fill {
-    fill: #FFFFFF;
+    height: 180px;
+    /* transform: rotateY(180deg); */
+    transform: scaleY(-1);
 }
 
 /***** Services Section *****/
-
-.services-section {
-    padding: 6rem 0 3rem 0 !important;
-}
-
 .icon-span {
     width: 2.5rem;
     height: 2.5rem;
@@ -175,35 +145,54 @@ button {
 /***** End Services Section *****/
 
 /***** More Info Section *****/
+.shapeinfo-container{
+    /* position: relative; */
+}
 .more-info-section {
-    background-image: linear-gradient(rgba(22, 22, 22, 0.7), rgba(22, 22, 22, 0.9)), url("https://images.pexels.com/photos/15705988/pexels-photo-15705988/free-photo-of-a-wooden-walkway-in-the-woods-with-trees.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-    background-size: cover;
+    background-image: linear-gradient(rgba(22, 22, 22, 0.7), rgba(22, 22, 22, 0.9));
+    /* background-image: linear-gradient(rgba(22, 22, 22, 0.7), rgba(22, 22, 22, 0.9)), url("https://images.pexels.com/photos/15705988/pexels-photo-15705988/free-photo-of-a-wooden-walkway-in-the-woods-with-trees.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
+    /* background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding: 6rem 0;
-    /* overflow: hidden; */
+    background-attachment: fixed; */
+    /* padding: 10rem 0 5rem 0; */
+    /* position: absolute; */
 }
 
-.more-info-section .img-section {
-    position: relative;
-}
 
-.more-info-section .img-section img {
+.img-section img{
     width: 70%;
 }
 
-.more-info-section .img-section {
-    width: 500px;
+.custom-shape3 svg {
+    transform: rotateY(180deg);
+    background-color: #555656;
 }
 
+.custom-shape4 svg {
+    transform: rotateY(180deg);
+}
 /***** End More Info Section *****/
 
-/***** Testimonial Section *****/
-.business-section {
-    padding-top: 3rem;
+
+/***** Start Common Section *****/
+.common-section{
+    /* position: relative; */
 }
 
+.custom-shape5 svg {
+    transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -moz-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+}
+
+/***** End Common Section *****/
+
+
+
+/***** Testimonial Section *****/
 /* Carousel */
 
 .carousel {
@@ -262,32 +251,13 @@ button {
 
 /***** Contact Section *****/
 .contact-section {
-    position: relative;
+    /* position: relative; */
 }
 
 .contact-section .common-title {
     padding-top: 6rem;
 }
 
-.custom-shape-divider-top-1730944167 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1730944167 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
-}
-
-.custom-shape-divider-top-1730944167 .shape-fill {
-    fill: #FFFFFF;
-}
 
 /* .form-section {} */
 
@@ -307,10 +277,10 @@ button {
     flex: 1;
     margin: 20px;
     cursor: pointer;
-    
+
 }
 
-.contact-div:hover{
+.contact-div:hover {
     width: auto;
     box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.3);
     transition: all 0.2s ease-in-out;
@@ -334,11 +304,11 @@ button {
     margin-top: 1rem;
 }
 
-.row ul li a {    
+.row ul li a {
     color: var(--bs-primary-color);
     font-weight: 500;
     letter-spacing: 0.1rem;
-    line-height: 2rem;    
+    line-height: 2rem;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;

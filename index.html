@@ -5,91 +5,107 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="/images/logo/favicon.ico">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="icon" href="/images/logo/favicon.ico">
-  <title>BusineS</title>
+  <title>Giga Render</title>
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="./images/logo/Busines.png" alt="logo" class="w-50 h-50" />
-      </a>
-      <!-- Creating toggle button for mobile view -->
-      <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-lg-0 text-dark">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#online-section">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-capitalize" href="/contact.html">contacts</a>
-          </li>
-        </ul>
-      </div>
+<body class="bg-body-secondary">
+    <!-- ========== Start Custom Shape Section ========== -->
+    <div class="custom-shape1">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100">
+        <g fill="#fff">
+          <path d="M500 80.7C358 68 0 4 0 4V0h1000v84.7c-216 23.3-358 8.6-500-4Z" opacity=".3"></path>
+          <path d="M500 65.7C358 53 0 4 0 4V0h1000v62.7c-216 23.3-358 15.6-500 3Z" opacity=".5"></path>
+          <path d="M500 50.7C358 38 0 4 0 4V0h1000v40.7C784 64 642 63.3 500 50.7Z" opacity="1"></path>
+        </g>
+      </svg>
     </div>
-  </nav>
+    <!-- ========== End Custom Shape Section ========== -->
 
-  <!-- ========== Hero Start Section ========== -->
-  <section class="bg-main bg-dark hero-section pt-5">
-    <div class="container">
-      <div class="row mb-5">
-        <div
-          class="mt-5 mt-lg-0 text-center text-lg-start order-lg-0 order-1 col-md-12 col-lg-6 d-flex flex-column justify-content-center align-items-start">
-          <h1 class="text-capitalize fw-bold text-white">Make your website stand out from the crowd.</h1>
-          <p class="mt-3 mb-5 para-width text-light-grey">At BusineS, we pride ourselves on delivering
-            top-quality service that meet your needs and exceed your expectations. With years of experience
-            and a commitment to innovation, we are your trusted partner in this.</p>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container d-flex align-items-start">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="./images/logos/gralt.png" alt="logo" class="w-50" />
+        </a>
+        <!-- Navbar toggler for mobile view -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <div class="text-center w-100 text-md-start">
-            <button class="text-capitalize btn btn-primary px-5 py-2" data-bs-toggle="tooltip"
-              data-bs-title="Contact me on +9779862004936">
-              Contact Me
-            </button>
+        <!-- ========== Start Navbar Section ========== -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mt-3 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#online-section">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-capitalize" href="/contact.html">contacts</a>
+            </li>
+          </ul>
+        </div>
+        <!-- ========== End Navbar Section ========== -->
+      </div>
+    </nav>
+
+    <!-- ========== Hero Start Section ========== -->
+
+    <section class="bg-main hero-section mt-lg-5 pt-lg-5">
+      <div class="container">
+        <div class="row mb-5">
+          <div
+            class="mt-5 mt-lg-0 text-center text-lg-start order-lg-0 order-1 col-md-12 col-lg-6 d-flex flex-column justify-content-center align-items-start">
+            <h1 class="text-capitalize fw-bold">Make your website stand out from the crowd.</h1>
+            <p class="mt-3 mb-5 para-width text-dark">At Giga Render, we pride ourselves on delivering
+              top-quality service that meet your needs and exceed your expectations. With years of experience
+              and a commitment to innovation, we are your trusted partner in this.</p>
+
+            <div class="text-center w-100 text-md-start">
+              <button class="text-capitalize btn btn-primary px-5 py-2" data-bs-toggle="tooltip"
+                data-bs-title="Contact me on +9779862004936">
+                Contact Me
+              </button>
+            </div>
+          </div>
+          <!-- Hero section image -->
+          <div class="order-lg-1 order-0 col-12 col-md-12 col-lg-6">
+            <div class="text-center text-lg-end">
+              <img src="./images/laptop.gif" class="hero-video--section" />
+            </div>
           </div>
         </div>
-        <!-- Hero section image -->
-        <div class="order-lg-1 order-0 col-12 col-md-12 col-lg-6">
-          <div class="text-center text-lg-end">
-            <img src="./images/laptop.gif" class="hero-video--section" />
-          </div>
-        </div>
       </div>
 
+    </section>
+    <div class="custom-shape2">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100">
+        <g fill="#fff">
+          <path d="M500 80.7C358 68 0 4 0 4V0h1000v84.7c-216 23.3-358 8.6-500-4Z" opacity=".3"></path>
+          <path d="M500 65.7C358 53 0 4 0 4V0h1000v62.7c-216 23.3-358 15.6-500 3Z" opacity=".5"></path>
+          <path d="M500 50.7C358 38 0 4 0 4V0h1000v40.7C784 64 642 63.3 500 50.7Z" opacity="1"></path>
+        </g>
+      </svg>
     </div>
-  </section>
-
-  <div class="custom-shape-divider-bottom-1730796877 bg-dark">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-      <path
-        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-        class="shape-fill"></path>
-    </svg>
-  </div>
-
-  <!-- ========== Hero End Section ========== -->
+    <!-- ========== Hero End Section ========== -->
 
   <!-- ========== Services Section ========== -->
 
-  <section class="services-section">
+  <section class="services-section bg-white pt-5">
     <div class="container text-center text-capitalize common-title fw-bold">
-      <h2 class="common-heading">What we'll do for <br> your business</h2>
+      <h2 class="common-heading">What we'll do for <br> your Giga Renders</h2>
       <hr class="w-25 mx-auto"> <!-- mx-auto? -->
     </div>
 
@@ -143,51 +159,67 @@
   <!-- ========== Services Section ========== -->
 
   <!-- ========== Digital Product Start Section ========== -->
+      <div class="custom-shape3">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100">
+          <g fill="#fff">
+            <path d="M500 80.7C358 68 0 4 0 4V0h1000v84.7c-216 23.3-358 8.6-500-4Z" opacity=".3"></path>
+            <path d="M500 65.7C358 53 0 4 0 4V0h1000v62.7c-216 23.3-358 15.6-500 3Z" opacity=".5"></path>
+            <path d="M500 50.7C358 38 0 4 0 4V0h1000v40.7C784 64 642 63.3 500 50.7Z" opacity="1"></path>
+          </g>
+        </svg>
+      </div>
+      <section class="more-info-section pt-5">        
+        <div class="container">
+          <div class="row d-flex justify-content-center align-items-center">
+            <!-- Hero section image -->
+            <div class="col-12 col-md-6 col-lg-6 img-section">
+              <figure>
+                <img src="./images/like.gif" alt="Digital Products" >
+              </figure>
+            </div>
 
-  <section class="bg-color bg-dark more-info-section">
-    <div class="container">
-      <div class="row">
-        <!-- Hero section image -->
-        <div class="col-12 col-md-6 col-lg-6 img-section">
-          <figure>
-            <img src="./images/like.gif" alt="Digital Products" class="img-fluid">
-          </figure>
-        </div>
+            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center align-items-center">
+              <h2 class="text-capitalize fw-bold text-white">Enhancing your website</h2>
+              <p class="mt-3 mb-5 para-width text-light-grey">Optimize design, content, and functionality for a better
+                user experience. Use responsive design, engaging content, interactive elements, fast load times,
+                intuitive
+                navigation, and strong calls-to-action. Regular updates and performance analysis keep your site
+                effective
+                and relevant.</p>
 
-        <div class="col-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center align-items-start">
-          <h2 class="text-capitalize fw-bold text-white">Enhancing your website</h2>
-          <p class="mt-3 mb-5 para-width text-light-grey">Optimize design, content, and functionality for a better
-            user experience. Use responsive design, engaging content, interactive elements, fast load times, intuitive
-            navigation, and strong calls-to-action. Regular updates and performance analysis keep your site effective
-            and relevant.</p>
-
-          <div class="text-center w-100 text-md-start">
-            <button class="text-capitalize btn btn-primary px-5 py-2" data-bs-toggle="tooltip"
-              data-bs-title="Contact me on +9779862004936">
-              Contact Me
-            </button>
+              <div class="text-center w-100 text-md-start">
+                <button class="text-capitalize btn btn-primary px-5 py-2" data-bs-toggle="tooltip"
+                  data-bs-title="Contact me on +9779862004936">
+                  Contact Me
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-
+      </section>
+      <div class="custom-shape4">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100">
+          <g fill="#2b2c2c">
+            <path d="M500 80.7C358 68 0 4 0 4V0h1000v84.7c-216 23.3-358 8.6-500-4Z" opacity=".3"></path>
+            <path d="M500 65.7C358 53 0 4 0 4V0h1000v62.7c-216 23.3-358 15.6-500 3Z" opacity=".5"></path>
+            <path d="M500 50.7C358 38 0 4 0 4V0h1000v40.7C784 64 642 63.3 500 50.7Z" opacity="1"></path>
+          </g>
+        </svg>
       </div>
-
-    </div>
-
-  </section>
 
   <!-- ========== Digital Product End Section ========== -->
 
   <!-- ========== Online Mode Start Section ========== -->
 
-  <section class="common-section business-section" id="online-section">
+  <section class="common-section p-5" id="online-section">
     <div class="container text-center text-capitalize common-title fw-bold">
-      <h2 class="common-heading">What we'll do for <br> your business</h2>
+      <h2 class="common-heading">Our Services <br> at Giga Renders</h2>
       <hr class="w-25 mx-auto"> <!-- mx-auto? -->
     </div>
-
     <div class="container">
       <div class="row">
-        <div class=" col-xl-6 col-m-12">
+
+        <div class=" col-xl-6 col-m-12 mb-3">
           <div class="d-flex px-3 py-5 shadow">
             <img src="./images/ad.gif" alt="Advertisement" class="d-md-block d-none img-fluid mx-3">
             <div>
@@ -198,7 +230,7 @@
           </div>
         </div>
 
-        <div class=" col-xl-6 col-m-12">
+        <div class=" col-xl-6 col-m-12 pb-3">
           <div class="d-flex px-3 py-5 shadow">
             <img src="./images/Announcement.gif" alt="Advertisement" class="d-md-block d-none img-fluid mx-3">
             <div>
@@ -210,7 +242,7 @@
           </div>
         </div>
 
-        <div class=" col-xl-6 col-m-12">
+        <div class=" col-xl-6 col-m-12 pb-3">
           <div class="d-flex px-3 py-5 shadow">
             <img src="./images/play.gif" alt="Advertisement" class="d-md-block d-none img-fluid mx-3">
             <div>
@@ -221,7 +253,7 @@
           </div>
         </div>
 
-        <div class=" col-xl-6 col-m-12">
+        <div class=" col-xl-6 col-m-12 pb-3">
           <div class="d-flex px-3 py-5 shadow">
             <img src="./images/like.gif" alt="Advertisement" class="d-md-block d-none img-fluid mx-3">
             <div>
@@ -235,17 +267,25 @@
       </div>
     </div>
   </section>
+  <div class="custom-shape5">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100">
+      <g fill="#212529">
+        <path d="M500 80.7C358 68 0 4 0 4V0h1000v84.7c-216 23.3-358 8.6-500-4Z" opacity=".3"></path>
+        <path d="M500 65.7C358 53 0 4 0 4V0h1000v62.7c-216 23.3-358 15.6-500 3Z" opacity=".5"></path>
+        <path d="M500 50.7C358 38 0 4 0 4V0h1000v40.7C784 64 642 63.3 500 50.7Z" opacity="1"></path>
+      </g>
+    </svg>
+  </div>
   <!-- ========== Online Mode End Section ========== -->
 
   <!-- ========== Testimonial Start Section ========== -->
 
-  <section class="common-section mb-5 pt-5 bg-dark">
+  <section class="common-section mb-5 pb-4 bg-dark">
     <div class="container text-center common-title fw-bold">
-      <h2 class="common-heading text-white">What clients say...<br></h2>
-      <hr class="w-25 mx-auto"> <!-- mx-auto? -->
+      <h2 class="common-heading text-white">What clients say...</h2>
+      <!-- <hr class="w-25 mx-auto">  -->
     </div>
-
-
+    
     <!-- Carousel Starts -->
     <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
