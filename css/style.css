@@ -7,14 +7,22 @@
     font-family: "Urbanist", sans-serif;
 }
 
+body {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 /* Declare Global CSS Variables */
 :root {
     --bs-dark-primary: #2a2e32;
+    --bs-secondary-color: #003b99;
+    --bs-secondary-light-color: rgb(44, 125, 255);
     --bs-dark-color: #33383d;
     --bs-main-color: #fff;
+    --bs-white-primary: #e9ecef;
     --bs-primary-color: #c6c6c6;
-    --bs-secondary-color: #77abff;
     --bs-supporting-color: #C850C0;
+    --bs-body-bgcolor: #e9ecef;
     /* --bs-header-height: 100px; */
 }
 
@@ -76,16 +84,19 @@ button {
     margin-bottom: 4.2rem;
 }
 
-.custom-shape1 {
-    position: absolute;
-    width: 100%;
-}
-
 .nav-link {
     color: var(--bs-dark-primary);
     font-weight: bold;
     margin: 0 20px;
 }
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
 
 .navbar-nav .nav-link.active {
     color: var(--bs-secondary-color);
@@ -117,12 +128,7 @@ button {
     -o-border-radius: 2rem;
 }
 
-.custom-shape2 svg {
-    /* position: relative; */
-    top: 0;
-    display: block;
-    height: 180px;
-    /* transform: rotateY(180deg); */
+.custom-shape1 svg {
     transform: scaleY(-1);
 }
 
@@ -130,24 +136,22 @@ button {
 .icon-span {
     width: 2.5rem;
     height: 2.5rem;
-    background-color: var(--bs-secondary-color);
+    background-color: var(--bs-secondary-light-color);
     color: var(--bs-main-color);
 }
 
 .card-box:hover {
+    background-color: rgba(233, 236, 239, 0.2);
     box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
 }
 
 .img-fluid {
-    width: 150px;
+    width: 120px;
 }
 
 /***** End Services Section *****/
 
 /***** More Info Section *****/
-.shapeinfo-container{
-    /* position: relative; */
-}
 .more-info-section {
     background-image: linear-gradient(rgba(22, 22, 22, 0.7), rgba(22, 22, 22, 0.9));
     /* background-image: linear-gradient(rgba(22, 22, 22, 0.7), rgba(22, 22, 22, 0.9)), url("https://images.pexels.com/photos/15705988/pexels-photo-15705988/free-photo-of-a-wooden-walkway-in-the-woods-with-trees.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
@@ -160,74 +164,93 @@ button {
 }
 
 
-.img-section img{
+.img-section img {
     width: 70%;
 }
 
-.custom-shape3 svg {
-    transform: rotateY(180deg);
+.custom-shape2 svg {
     background-color: #555656;
 }
 
-.custom-shape4 svg {
-    transform: rotateY(180deg);
-}
 /***** End More Info Section *****/
 
 
 /***** Start Common Section *****/
-.common-section{
-    /* position: relative; */
+.custom-shape3 svg {
+    transform: scaleY(-1);
 }
 
-.custom-shape5 svg {
-    transform: scaleY(-1);
-    -webkit-transform: scaleY(-1);
-    -moz-transform: scaleY(-1);
-    -ms-transform: scaleY(-1);
-    -o-transform: scaleY(-1);
+.custom-shape4 svg {
+    /*transform: scaleY(-1);
+    */
+    transform: rotate(180deg);
 }
 
 /***** End Common Section *****/
 
 
 
-/***** Testimonial Section *****/
+/***** Testimonials Section *****/
 /* Carousel */
 
 .carousel {
     padding: 0 8rem;
 }
 
+.card-img-top {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.card-body {
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+}
+
 .carousel .card {
-    background-color: #262631;
-    color: var(--bs-main-color);
-    transition: all 0.3s linear;
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
-    -ms-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
+    background: linear-gradient(180deg,
+            /* Start color */
+            #003b99 0%,
+            /* Middle (lightest) */
+            #3a3a4a 50%,
+            /* End (same as start) */
+            #2b2f33 100%);
+    color: var(--bs-primary-color);
+
 }
 
-.carousel-inner .card p {
-    color: var(--bs-main-color);
+.shadowWrapper {
+    perspective: 1000px;
+    height: auto;
 }
 
-.carousel-inner .card:hover {
-    background-color: var(--bs-main-color);
-    color: var(--bs-dark-color);
+.carousel .card:hover {
+    transform: rotateX(10deg);
+    /*Exaggeratetiltonhover*/
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 10px 10px rgba(0, 0, 0, 0.2);
+    -webkit-transform: rotateX(10deg);
+    -moz-transform: rotateX(10deg);
+    -ms-transform: rotateX(10deg);
+    -o-transform: rotateX(10deg);
+    background: linear-gradient(180deg,
+            /* Start color */
+            #003fa4 0%,
+            /* Middle (lightest) */
+            #49495c 50%,
+            /* End (same as start) */
+            #3e4349 100%);
+
 }
 
-.carousel-inner .card:hover p {
-    color: var(--bs-dark-color);
-}
 
 .fa-star {
     color: var(--bs-supporting-color);
 }
 
 .carousel-indicators {
-    bottom: -20%;
+    bottom: -5%;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -253,6 +276,39 @@ button {
 .contact-section {
     /* position: relative; */
 }
+
+.custom-shape6 svg {
+    background-color: #555656;
+    transform: scaleY(-1);
+}
+
+/* .shapedividers_com-629 {
+    overflow: hidden;
+    position: relative;
+}
+
+.shapedividers_com-629::before {
+    content: '';
+    font-family: 'shape divider from ShapeDividers.com';
+    position: absolute;
+    z-index: 3;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw;
+    background-size: 100% 90px;
+    background-position: 50% 0%;
+    background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.278 3.62" preserveAspectRatio="none"><path d="M35.278.092S8.238.267 0 3.62V.092z" opacity=".2" fill="%212529"/><path d="M35.278.092S8.238.246 0 3.194V.092z" opacity=".2" fill="%212529"/><path d="M35.278.092S8.238.223 0 2.738V.092zM35.278.092H0V0h35.278z" fill="%212529"/></svg>');
+}
+
+@media (min-width:2100px) {
+    .shapedividers_com-629::before {
+        background-size: 100% calc(2vw + 90px);
+    }
+} */
+
 
 .contact-section .common-title {
     padding-top: 6rem;
