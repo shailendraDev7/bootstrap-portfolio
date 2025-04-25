@@ -149,18 +149,17 @@ button {
     width: 120px;
 }
 
+.cardServices:hover {
+    position: relative;
+    transition: background 0.2s ease;
+}
+
+
 /***** End Services Section *****/
 
 /***** More Info Section *****/
 .more-info-section {
     background-image: linear-gradient(rgba(22, 22, 22, 0.7), rgba(22, 22, 22, 0.9));
-    /* background-image: linear-gradient(rgba(22, 22, 22, 0.7), rgba(22, 22, 22, 0.9)), url("https://images.pexels.com/photos/15705988/pexels-photo-15705988/free-photo-of-a-wooden-walkway-in-the-woods-with-trees.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
-    /* background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
-    /* padding: 10rem 0 5rem 0; */
-    /* position: absolute; */
 }
 
 
@@ -219,11 +218,6 @@ button {
             #2b2f33 100%);
     color: var(--bs-primary-color);
 
-}
-
-.shadowWrapper {
-    perspective: 1000px;
-    height: auto;
 }
 
 .carousel .card:hover {
