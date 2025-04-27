@@ -180,9 +180,11 @@ button {
 }
 
 .custom-shape4 svg {
-    /*transform: scaleY(-1);
-    */
     transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
 }
 
 /***** End Common Section *****/
@@ -256,6 +258,13 @@ button {
 /***** End Testimonial Section *****/
 
 /***** Expert Panel Section *****/
+.expertPanel .card {
+    padding: 1rem;
+    border: 2px dashed rgba(170, 170, 170, 0.5);
+}
+
+.expertPanel .card::after {}
+
 .text-grey {
     color: var(--bs-dark-color);
 }
@@ -267,49 +276,47 @@ button {
 /***** End Expert Panel Section *****/
 
 /***** Contact Section *****/
-.contact-section {
-    /* position: relative; */
+.custom-shape5 svg {
+    background-color: #424649;
+    /* transform: scaleY(-1); */
 }
-
-.custom-shape6 svg {
-    background-color: #555656;
-    transform: scaleY(-1);
-}
-
-/* .shapedividers_com-629 {
-    overflow: hidden;
-    position: relative;
-}
-
-.shapedividers_com-629::before {
-    content: '';
-    font-family: 'shape divider from ShapeDividers.com';
-    position: absolute;
-    z-index: 3;
-    pointer-events: none;
-    background-repeat: no-repeat;
-    bottom: -0.1vw;
-    left: -0.1vw;
-    right: -0.1vw;
-    top: -0.1vw;
-    background-size: 100% 90px;
-    background-position: 50% 0%;
-    background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.278 3.62" preserveAspectRatio="none"><path d="M35.278.092S8.238.267 0 3.62V.092z" opacity=".2" fill="%212529"/><path d="M35.278.092S8.238.246 0 3.194V.092z" opacity=".2" fill="%212529"/><path d="M35.278.092S8.238.223 0 2.738V.092zM35.278.092H0V0h35.278z" fill="%212529"/></svg>');
-}
-
-@media (min-width:2100px) {
-    .shapedividers_com-629::before {
-        background-size: 100% calc(2vw + 90px);
-    }
-} */
-
 
 .contact-section .common-title {
     padding-top: 6rem;
 }
 
+/* 
+.form-section {
+    padding: 0 1rem;
+} */
 
-/* .form-section {} */
+
+
+input,
+textarea {
+    width: 100%;
+    padding: 1.2rem 1.2rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+}
+
+::placeholder {
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    opacity: 0.5;
+}
+
+.form-section label {
+    display: block;
+    text-transform: capitalize;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+input:focus-visible {
+    outline: 0.1rem solid var(--bnt-hover-bg-color);
+}
 
 /***** End Contact Section *****/
 
@@ -368,7 +375,60 @@ button {
 
 .row ul li a:hover {
     font-weight: bold;
-    color: var(--bs-secondary-color);
+    color: white;
+    transform: all 0.1s ease-in-out;
+    -webkit-transform: all 0.1s ease-in-out;
+    -moz-transform: all 0.1s ease-in-out;
+    -ms-transform: all 0.1s ease-in-out;
+    -o-transform: all 0.1s ease-in-out;
+}
+
+.main-footer-section .smfooter-icons a {
+    color: var(--bs-primary-color);
+}
+
+.main-footer-section .smfooter-icons a:hover {
+    color: white;
+    transform: scale(1.1);
+    transition: transform 0.1s ease-in-out;
+    -webkit-transition: transform 0.1s ease-in-out;
+    -moz-transition: transform 0.1s ease-in-out;
+    -ms-transition: transform 0.1s ease-in-out;
+    -o-transition: transform 0.1s ease-in-out;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.main-footer-section li{
+    position: relative;
+}
+
+.main-footer-section li:hover {
+    transform: translateX(1%);
+    -webkit-transform: translateX(1%);
+    -moz-transform: translateX(1%);
+    -ms-transform: translateX(1%);
+    -o-transform: translateX(1%);
+}
+
+.main-footer-section li:hover::before {
+    content: "";
+    position: absolute;
+    left: -1.5rem;
+    /*Starthidden*/
+    top: 50%;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-right: 2px solid white;
+    border-top: 2px solid rgb(145, 145, 145);
+    transform: translateY(-50%) rotate(45deg);
+    transition: right 0.3s ease;
+    -webkit-transition: right 0.3s ease;
+    -moz-transition: right 0.3s ease;
+    -ms-transition: right 0.3s ease;
+    -o-transition: right 0.3s ease;
 }
 
 /***** End Footer Section *****/
