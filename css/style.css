@@ -34,7 +34,6 @@ h4,
 h5,
 a {
     font-family: 'Lexend Deca', sans-serif;
-    color: var(--bs-dark-color);
 }
 
 h1 {
@@ -67,6 +66,23 @@ li {
     list-style: none;
 }
 
+input,
+textarea {
+    width: 100%;
+    padding: 1.2rem 1.2rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+}
+
+::placeholder {
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    opacity: 0.5;
+}
+
+input:focus-visible {
+    outline: 0.1rem solid var(--bnt-hover-bg-color);
+}
 
 button {
     font-size: 1.15rem;
@@ -84,12 +100,6 @@ button {
     margin-bottom: 4.2rem;
 }
 
-.nav-link {
-    color: var(--bs-dark-primary);
-    font-weight: bold;
-    margin: 0 20px;
-}
-
 .navbar {
     position: absolute;
     top: 0;
@@ -97,9 +107,17 @@ button {
     width: 100%;
 }
 
-
 .navbar-nav .nav-link.active {
     color: var(--bs-secondary-color);
+}
+
+.nav-link {
+    margin: 0 1.2rem;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .text-light-grey {
@@ -285,26 +303,7 @@ button {
     padding-top: 6rem;
 }
 
-/* 
-.form-section {
-    padding: 0 1rem;
-} */
 
-
-
-input,
-textarea {
-    width: 100%;
-    padding: 1.2rem 1.2rem;
-    font-size: 1.1rem;
-    letter-spacing: 0.1rem;
-}
-
-::placeholder {
-    font-size: 0.9rem;
-    letter-spacing: 0.1rem;
-    opacity: 0.5;
-}
 
 .form-section label {
     display: block;
@@ -314,9 +313,6 @@ textarea {
     color: white;
 }
 
-input:focus-visible {
-    outline: 0.1rem solid var(--bnt-hover-bg-color);
-}
 
 /***** End Contact Section *****/
 
@@ -361,7 +357,7 @@ input:focus-visible {
     margin-top: 1rem;
 }
 
-.row ul li a {
+.main-footer-section .row ul li a {
     color: var(--bs-primary-color);
     font-weight: 500;
     letter-spacing: 0.1rem;
@@ -373,7 +369,7 @@ input:focus-visible {
     -o-transition: all 0.3s ease-in-out;
 }
 
-.row ul li a:hover {
+.main-footer-section .row ul li a:hover {
     font-weight: bold;
     color: white;
     transform: all 0.1s ease-in-out;
@@ -401,7 +397,7 @@ input:focus-visible {
     -o-transform: scale(1.1);
 }
 
-.main-footer-section li{
+.main-footer-section li {
     position: relative;
 }
 
