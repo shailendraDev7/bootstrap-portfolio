@@ -50,7 +50,6 @@ p {
     margin: 0;
     font-weight: 400;
     font-size: 1rem;
-    /* color: var; */
     letter-spacing: 0.07rem;
     line-height: 1.55rem;
     font-synthesis: none;
@@ -428,3 +427,47 @@ button {
 }
 
 /***** End Footer Section *****/
+
+
+/***** INDIVIDUAL PAGES Section *****/ 
+/***** About US Section *****/ 
+.ourteam-section .card-img{
+    aspect-ratio: 1;
+    background-size: none;
+}
+
+.card-img-overlay {
+    border-radius: 10%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: scale(0.9);
+    transition:transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    -webkit-transition:transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    -moz-transition:transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    -ms-transition:transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    -o-transition:transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.ourteam-section .card:hover .card-img-overlay {
+    opacity: 1; /* Fade in */
+    transform: scale(1); /* Scale up */
+}
+
+/***** End About US Section *****/
+
+
+
+
+
+/* Contact page */
+.contact-page label{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+    opacity: 0.6;
+    margin-left: 3px;;
+    margin-bottom: 4px;
+}
+
+/***** End INDIVIDUAL PAGES Section *****/
